@@ -1,8 +1,9 @@
 <template>
 
         <h1 class="gradient">MoodFarm </h1>
+<div class="container vh-100 d-flex justify-content-center align-items-center">
 
-    <div class="card">
+    <div class="card">    
         <div class="vh-100 d-flex justify-content-center align-items-center">
             <div class="login-panel card p-3">
                 <form action="login.html" method="post">
@@ -34,7 +35,7 @@
             </div>
         </div>
     </div>     
-
+</div>
 </template>
 
 <script>
@@ -76,11 +77,11 @@
             min-height: 100vh;
         } */
 
-        /* @property --rotate {
+        @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
   inherits: false;
-} */
+}
 
         :root {
             --card-height: 80vh;
@@ -174,13 +175,13 @@
             }
         }
 
-        a {
+        /* a {
             color: #212534;
             text-decoration: none;
             font-family: sans-serif;
             font-weight: bold;
             margin-top: 2rem;
-        }
+        } */
     </style>
 
 

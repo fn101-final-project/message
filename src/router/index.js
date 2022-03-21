@@ -21,17 +21,17 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   // },
   {
-    path: '/',
+    path: '/adminloginView',
     name: 'adminlogin',
     component: adminloginView,
   },
   {
-    path: '/',
+    path: '/backstagemanagementView',
     name: 'backstagemanagement',
     component: backstagemanagementView,
   },
   {
-    path: '/',
+    path: '/messageView',
     name: 'message',
     component: messageView,
   },

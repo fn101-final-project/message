@@ -3,31 +3,31 @@
  <h1 class="gradient">MoodFarm
 </h1>
   <div class="container vh-100 d-flex justify-content-center align-items-center">
-  <div class="card ">
+    <div class="card ">
   
-    <div class="vh-100 d-flex justify-content-center align-items-center">
+          <div class="vh-100 d-flex justify-content-center align-items-center">
 
-      <button
-      class="d-flex justify-content-center align-items-center col"
-      :class="{active: isLogin}"
-      @click="changeTologin"
-      >
-      Login
-      </button>
-      <button
-      class="d-flex justify-content-center align-items-center col"
-      :class="{active: isRegister}"
-      @click="changeToregister"
-      >
-      Register
-      </button>
-    </div>
-    <div class="row pb-5">
-  <div class="col-12 m-auto panel">
-    <loginTab v-if="isLogin" />
-    <registerTab v-if="isRegister" />
-  </div>
-    </div>
+            <button
+            class="d-flex justify-content-center align-items-center col"
+            :class="{active: isLogin}"
+            @click="changeTologin"
+            >
+            Login
+            </button>
+            <button
+            class="d-flex justify-content-center align-items-center col"
+            :class="{active: isRegister}"
+            @click="changeToregister"
+            >
+            Register
+            </button>
+              </div>
+              <div class="row pb-5">
+            <div class="col-12 m-auto panel">
+              <loginTab v-if="isLogin" />
+              <registerTab v-if="isRegister" />
+            </div>
+          </div>
     </div>
   </div>
 
