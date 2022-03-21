@@ -1,23 +1,25 @@
 <template>
 
  <h1 class="gradient">MoodFarm
-
-  <div class="card">
-    <div class="container px-5">
+</h1>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+  <div class="card ">
+  
     <div class="vh-100 d-flex justify-content-center align-items-center">
+
       <button
-      class="col-6"
-      :class="{active: isRegister}"
-      @click="changeToregister"
-      >
-      Register
-      </button>
-      <button
-      class="col-6"
+      class="d-flex justify-content-center align-items-center col"
       :class="{active: isLogin}"
       @click="changeTologin"
       >
       Login
+      </button>
+      <button
+      class="d-flex justify-content-center align-items-center col"
+      :class="{active: isRegister}"
+      @click="changeToregister"
+      >
+      Register
       </button>
     </div>
     <div class="row ph-5">
@@ -28,7 +30,7 @@
     </div>
     </div>
   </div>
-</h1>
+
 </template>
 <script>
 import loginTab from '@/components/loginTab.vue';
@@ -43,7 +45,7 @@ export default {
 
   data() {
     return{
-      isLogin: ture,
+      isLogin: true,
       isRegister: false,
     };
   },
@@ -86,13 +88,13 @@ export default {
             }
         }
 
-  /* card */
+  /* card*/ 
 
-        /* @property --rotate {
+        @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
   inherits: false;
-} */ 
+} 
 
         :root {
             --card-height: 80vh;
@@ -185,54 +187,5 @@ export default {
                 --rotate: 360deg;
             }
         }
-
-        a {
-            color: #212534;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-weight: bold;
-            margin-top: 2rem;
-        }
-
-        /* login */
-        *{
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-
-
-.full_info_wrap .tabs ul{
-  display: flex;
-  width: 470px;
-  height: 36px;
-  border: 1px solid #00b7ff;
-  border-radius: 3px;
-  padding:0;
-}
-
-.full_info_wrap .tabs ul li.active,
-.full_info_wrap .tabs ul li:hover{
-  background: rgb(170, 227, 241);
-  color: #5558c9;
-  flex-grow: 1px;
-}
-
-.full_info_wrap .tabs ul li{
-  /* padding: 10px 15px; */
-  width: 33.34%;
-  height: 34px;
-  text-align: top ;
-  border-right: 1px solid #dfe4e6;
-  background: #f2f4f5;
-  color: #a0acb5;
-  font-weight: 600;
-  cursor: pointer;
-  
-}
-
-
-
 
     </style>

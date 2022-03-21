@@ -1,7 +1,7 @@
 <template>
 
         <h1 class="gradient">MoodFarm
-
+ </h1>
     <div class="card">
         <div class="vh-100 d-flex justify-content-center align-items-center">
             <div class="login-panel card p-3">
@@ -23,11 +23,12 @@
                                 </div>
                             </div>
                         </div>
+                     </div>   
                 </form>
             </div>
         </div>
     </div> 
-    </h1>
+   
 
 </template>
 
@@ -179,20 +180,9 @@
             background-color: #fff;
         }
     </style>
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-  <!-- Bootstrap JavaScript Libraries -->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+ 

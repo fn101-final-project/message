@@ -1,6 +1,5 @@
 <template>
- 
-<div class="div">
+
         <h1 class="gradient">MoodFarm </h1>
 
     <div class="card">
@@ -35,19 +34,11 @@
             </div>
         </div>
     </div>     
-</div>
+
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 
 //  function onSubmit(token) {
 //           document.getElementById("demo-form").submit();

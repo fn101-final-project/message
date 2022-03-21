@@ -3,14 +3,14 @@ import adminloginView from '../views/adminloginView.vue'
 import backstagemanagementView from '../views/backstagemanagementView.vue'
 import messageView from '../views/messageView.vue'
 import moodframView from '../views/moodframView.vue'
-import HomeView from '../views/HomeView.vue'
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
-    redirect: '/moodfram',
+    component: moodframView,
+    // redirect: '/moodfram',
   },
   //{
   //   path: '/about',
@@ -35,16 +35,16 @@ const routes = [
     name: 'message',
     component: messageView,
   },
-  {
-    path: '/',
-    name: 'moodfram',
-    component: moodframView,
-  },
-  {
-    path: '/404',
-    name: '404',
-    component: () => import('@/components/Page404Component.vue'),
-  },
+  // {
+  //   path: '/',
+  //   name: 'moodfram',
+  //   component: moodframView,
+  // },
+  // {
+  //   path: '/404',
+  //   name: '404',
+  //   component: () => import('@/components/Page404Component.vue'),
+  // },
   {
     path: '/:catchAll(.*)',
     redirect: '/404',
