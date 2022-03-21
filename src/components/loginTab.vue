@@ -1,24 +1,26 @@
 <template>
   <div class="pt-4">Please enter your login information</div>
-  <Form class="d-grid p-4 text-end" @submit="onsubmit">
-    <Filed
-      name="account"
-      type="text"
-      :rules="isRequired"
-      class="form-control"
-      placeholder="account"
-/>
- <ErrorMessage name="account" class="text-danger" />
-    <Field
-      name="password"
-      type="password"
-      :rules="isRequired"
-      class="form-control mt-3"
-      placeholder="password"
-    />
-<ErrorMessage name="password" class="text-danger" />
-    <button class="btn btn-primary mt-3" type="submit">login</button>
- </Form>
+<form class="d-grid p-4 text-end" @submit="onSubmit">
+    
+    <div class="row">
+      <div class="col-md-6">
+        <input type="account" name="account" placeholder="account" v-model="account">
+   </div>
+   </div>
+<div class="row">
+      <div class="col-md-6">
+        <input type="password" name="password" placeholder="password" v-model="password">
+</div>
+   </div>   
+   <div class="row">
+      <div class="col-md-6">
+        <input type="email" name="email" placeholder="email" v-model="mail">
+</div>
+   </div>   
+      <button class="btn btn-primary mt-3" type="submit" :disabled="isDisabled">
+      confirm
+    </button>     
+</form>
   <div class="pb-4">
     <a href="#" class="link-dark">忘記密碼?</a>
   </div>

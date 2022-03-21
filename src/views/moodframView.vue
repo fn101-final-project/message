@@ -22,7 +22,7 @@
       Register
       </button>
     </div>
-    <div class="row ph-5">
+    <div class="row pb-5">
   <div class="col-12 m-auto panel">
     <loginTab v-if="isLogin" />
     <registerTab v-if="isRegister" />
@@ -61,6 +61,7 @@ export default {
   },
 };
 </script>
+
     <style>
 /* h1 */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');

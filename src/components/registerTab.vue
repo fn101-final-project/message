@@ -1,5 +1,5 @@
 <template>
-
+<div class="pt-4">Please enter your register information</div>
 <form class="d-grid p-4 text-end" @submit="onSubmit">
     
     <div class="row">
@@ -17,5 +17,8 @@
         <input type="email" name="email" placeholder="email" v-model="mail">
 </div>
    </div>        
+   <button class="btn btn-primary mt-3" type="submit" :disabled="isDisabled">
+      confirm
+    </button>
 </form>
 </template>
