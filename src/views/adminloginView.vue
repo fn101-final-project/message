@@ -28,6 +28,11 @@
                                 
                                 <button class="g-recaptcha btn btn-info" data-sitekey="6Lczft8eAAAAALpS-mZydOiEibqtteKJMAM1Srhc" data-callback='onSubmit'
                                     data-action='submit'>Login</button>
+                                <div>
+                                 <button @click="executeRecaptcha"></button>
+                                <!-- listen to verify event emited by the recaptcha component -->
+                                <recaptcha ref="recaptcha" @verify="submit"></recaptcha>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,7 +50,24 @@
 //           document.getElementById("demo-form").submit();
 //         }
 </script>
-
+<script>
+import Recaptcha from 'recaptcha'
+export default {
+  components: {
+    Recaptcha
+  },
+  methods: {
+    // send your recaptcha token to the server to verify it
+    submit (response) {
+      console.log(response)
+    },
+    // execute the recaptcha widget
+    executeRecaptcha () {
+      this.$refs.recaptcha.execute()
+    }
+  }
+}
+</script>
  <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
