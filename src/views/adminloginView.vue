@@ -31,7 +31,7 @@
                                 <div>
                                  <button @click="executeRecaptcha"></button>
                                 <!-- listen to verify event emited by the recaptcha component -->
-                                <recaptcha ref="recaptcha" @verify="submit"></recaptcha>
+                                <!-- <recaptcha ref="#" @verify="submit"></recaptcha> -->
                                 </div>
                             </div>
                         </div>
@@ -43,17 +43,11 @@
 </div>
 </template>
 
-<script>
 
-
-//  function onSubmit(token) {
-//           document.getElementById("demo-form").submit();
-//         }
-</script>
 <script>
 import Recaptcha from 'recaptcha'
 export default {
-  components: {
+  component: {
     Recaptcha
   },
   methods: {

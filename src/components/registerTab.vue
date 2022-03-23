@@ -1,4 +1,5 @@
 <template>
+
 <div class="pt-4">Please enter your register information</div>
 <form class="d-grid p-4 text-end" @submit="onSubmit">
     
@@ -21,4 +22,5 @@
       confirm
     </button>
 </form>
+
 </template>
